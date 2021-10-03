@@ -1,0 +1,21 @@
+{
+  "name": "firstcry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^6.0.8",
+    "node": "^16.10.0",
+    "node-localstorage": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon src/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

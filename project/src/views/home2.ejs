@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Cry - Online Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.bag{
+    background-color: #D9F3F4;
+    }
+.bag li{
+    margin-top:5px
+}
+
+
+   #a hr { margin: 0.1em auto; }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/css/home.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <div id="cont">
+        <div class="sticky">
+            <div class="header">
+                <div class="web">
+                    <a href='/home' >
+                        <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="search-div">
+                    <input type="text" placeholder="Search for a Category, Brand or Product" />
+                    <img id="searchpng" src="https://image.flaticon.com/icons/png/128/49/49116.png" alt="" />
+                </div>
+                <div id=short-links>
+                    <div class="location">
+                        <span>Select location</span>
+                    </div>
+                    <div class="Preschools">
+                        <span>Stores & Preschools</span>
+                    </div>
+                    <div class="Support">
+                        <span>Support</span>
+                    </div>
+                    <div class="Trackorder">
+                        <span>Track Order</span>
+                    </div>
+                    <div class="parenting">
+                        <span>Firstcry Parenting</span>
+                    </div>
+                    <div class="dropdown shortlist">
+                        <div class="dropbtn">My Account 
+                          <i class="fa fa-caret-down"></i>
+                        </div>
+                    <div class="dropdown-content">
+                       
+                        <a href="#">My History</a>
+                        <a href="#">Manage Returns</a>
+                        <a href="#">Quick Reorder</a>
+                        <a href="#" onclick="log()">logout</a>
+                      </div>
+                    </div>
+                    <div class="shortlist">
+                        <img src="https://www.svgrepo.com/show/14970/heart.svg" class="svg" alt=""> Shortlist
+                    </div>
+                    <div class="shortlis">
+                        <img src="https://www.svgrepo.com/show/11541/shopping-cart.svg" class="cart" onclick="cart()">Cart
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="all-cat">
+                    <a href="" onmouseover="doit()">ALL CATOGORIES</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="" onclick="prod()">BOY FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="" onclick="prod()">GIRL FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="" onclick="prod()">FOOTWEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">TOYS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">DIAPERING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">GEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">FEEDING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BATH & SKIN</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">NURSERY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">MOMS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">HEALTHY & SAFETY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BOUTIQUES</a>
+                </div>
+                <div class="all-cat-1 blue" id="blue">
+                    <a href="">Carter's</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="containerfornav">
+            <div class="container1">
+                <h4>ALL CATOGORIES</h4>
+                <a href="/products">BOY FASHION</a>
+                <a href="/products">GIRL FASHION</a>
+                <a href="">FOOTWEAR</a>
+                <a href="">TOYS</a>
+                <a href="">DIAPERING</a>
+                <a href="">GEAR</a>
+                <a href="">FEEDING</a>
+                <a href="">BATH & SKIN</a>
+                <a href="">NURSERY</a>
+                <a href="">MOMS</a>
+                <a href="">HEALTHY & SAFETY</a>
+                <a href="">BOUTIQUES</a>
+                <a href="">WOMEN'S PERSONAL CARE NEW</a>
+                <a href="">BIRTHDAYS & GIFTS</a>
+                <a href="">BOOKS & CLASSES</a>
+                <a href="">SCHOOL SUPPLIES</a>
+                <a href="">OFFERS</a>
+            </div>
+            <div class="container2">
+             <div>
+                 <h4>SHOP BY CATEGORY</h4>
+                 <a href="">T-shirt</a>
+                 <a href="">Jeans & Trouser</a>
+                 <a href="">Sets & Suits</a>
+                 <a href="">NightWear</a>
+                 <a href="">Onesies & Rompers</a>
+                 <a href="">Sweat Shirt & Jacket NEW</a>
+                 <a href="">Party Wear</a>
+                 <a href="">Athleisure & Sportswear</a>
+                 <a href="">Trackpants & Pajamas</a>
+                 <a href="">Shirts NEW</a>
+                 <a href="">Shorts</a>
+                 <a href="">Ethnic Wear</a>
+                 <a href="">Sweaters NEW</a>
+                 <a href="">Inner Wear & Thermals NEW</a>
+                 <a href="">Socks</a>
+                 <a href="">Caps & Gloves NEW</a>
+                <a href="">Rainwear</a>
+                <a href="">Swim Wear</a>
+                <a href="">Bath Time</a>
+                <a href="">Theme Costumes</a>
+             </div>
+             <div>
+                 <h4>SHOP BY COLLECTION</h4>
+                 <a href="">Autumn Collection</a>
+                 <a href="">Sporty Look</a>
+                 <a href="">Baby Essentials</a>
+                 <a href="">Baby Essentials</a>
+                 <h4>FASHION ACCESSORIES</h4>
+                    <a href="">Sunglasses</a>
+                    <a href="">Watches</a>
+                    <a href="">Bags</a>
+                    <a href="">Belts & Suspenders</a>
+                 <h4>FOOTWEAR</h4>
+                 <a href="">Casual Shoes</a>
+                 <a href="">Sandals</a>
+                 <a href="">Booties</a>
+                 <a href="">Flip Flops & Clogs</a>
+                 <a href="">Bellies & Peep Toes</a>
+             </div>
+             <div>
+                 <h4>SHOP BY AGE</h4>
+                 <a href="">Preemie/Tine Preemie</a>
+                 <a href="">New Born (0-3 M)</a>
+                 <a href="">3-6 Months</a>
+                 <a href="">6-9 Months</a>
+                 <a href="">9-12 Months</a>
+                 <a href="">12-18 Months</a>
+                 <a href="">18-24 Months</a>
+                 <a href="">2 to 4 Years</a>
+                 <a href="">4 to 6 Years</a>
+                 <a href="">6 to 8 Years</a>
+                 <a href="">8+ Years</a>
+                 <h4>SHOP BY PRICE</h4>
+                 <a href="">All Under 199</a>
+                 <a href="">All Under 299</a>
+                 <a href="">All Under 399</a>
+                 <a href="">All Under 499</a>
+                 <h4>SHOP BY BRANDS</h4>
+                 <a href="">Babyhug</a>
+                 <a href="">Babyoye</a>
+                 <a href="">Carter's</a>
+                 <a href="">Kookie Kids</a>
+                 <a href="">Mark & Mia</a>
+                 <a href="">Cute Walk</a>
+                 <a href="">Pine Kids</a>
+             </div>
+             <div>
+                 <img src="https://cdn.fcglcdn.com/brainbees/images/n/autumn_21_drop_down_menu_boy.jpg" alt="">
+             </div>
+            </div>
+        </div>
+        <!-- slideshow carousel -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img
+                src="https://cdn.fcglcdn.com/brainbees/banners/test/Babyhug-Toiletries_Opt3_Hp%202_2021325104832.webp"
+                style="width: 100%"
+              />
+            </div>
+    
+            <div class="mySlides fade">
+              <img
+                src="https://cdn.fcglcdn.com/brainbees/banners/test/MKTGN_HP_2_Flat35_2021817114410.webp"
+                style="width: 100%"
+              />
+            </div>
+    
+            <div class="mySlides fade">
+              <img
+                src="https://cdn.fcglcdn.com/brainbees/banners/test/HP_MKTG_P04_ALL_6_Flat42%20off_Superhit_Fashion_Deal_202181772916.webp"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+                <img
+                  src="https://cdn.fcglcdn.com/brainbees/banners/test/MKTGN_HP_MDS_Flat4238_2021822133013.webp"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides fade">
+                <img
+                  src="https://cdn.fcglcdn.com/brainbees/banners/test/desktop_get_monsoon_ready_20082021_2021821115010.webp"
+                  style="width: 100%"
+                />
+              </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <div class="center-quote">
+            <div class="cent-text">
+                <span>PREMIUM BOUTIQUES</span>
+            </div>
+        </div>
+        <div class="img-block">
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25131.webp" alt="">
+                <h3 id="text">Platime Favourites | Up To 24M</h3>
+                <h4 id="text2">Onesies, Tops, Sets & More</h4>
+                
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25132.webp" alt="">
+                  <h3 id="text">Lively & Fresh | 2-12+Y</h3>
+                 <h4 id="text2">Styles To Flaunt</h4>
+                        <h5 id="text3">NEW TODAY</h5>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25133.webp" alt="">
+                <h3 id="text">Have A Good Night | 2-12Y</h3>
+                <h4 id="text2">Sleepwear For Little Ones</h4>
+                <h5 id="text3">NEW TODAY</h5>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25134.webp" alt="">
+                <h3 id="text">Ready To Play Styles | 2-4Y</h3>
+             <h4 id="text2">Sets, Frocks & Leggings</h4>
+               <h5 id="text3">NEW TODAY</h5>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25135.webp" alt="">
+                <h3 id="text">Trendy Bottoms | 4-10Y</h3>
+                <h4 id="text2">Shorts, Skirts, Pajamas, Jeans & More</h4>
+                <h5 id="text3">NEW TODAY</h5>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25136.webp" alt="">
+                <h3 id="text">Their Style diaries | Up to 24M</h3>
+                <h4 id="text2">Fancy Onesies & Rompers</h4>
+                <h5 id="text3">NEW TODAY</h5>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25127.webp" alt="">
+                <h3 id="text">Spot On | Up to 24M</h3>
+                <h4 id="text">Animal Prints To Flaunt</h4>
+ 
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25128.webp" alt="">
+                <h3 id="text">Dreamy Denims | 2-12Y</h3>
+                <h4 id="text">Demim Shirts, Frocks, Jeans & More</h4>
+ 
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25130.webp" alt="">
+                <h3 id="text">Their Comfy Best | Up To 24M</h3>
+                <h4 id="text">Nightwear & Pajamas</h4>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25129.webp" alt="">
+                <h3 id="text">Trendy & Smart | 2-12Y</h3>
+                <h4 id="text">Sweatshirts</h4>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25121.webp" alt="">
+                <h3 id="text">Own The Looks</h3>
+                <h4 id="text">Best Styles Of the Season</h4>
+            </a>
+            <a href="products.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/25126.webp" alt="">
+                <h3 id="text">Classic Plaids | 2-12+Y</h3>
+                <h4 id="text">Styles To Flaunt</h4>
+            </a>
+        </div>
+
+    </main>
+    <div class="tech-slideshow">
+        <div class="mover-1"></div>
+        <div class="mover-2"></div>
+      </div>
+    </div>
+<div id="a">
+      
+    <div class="container-fluid bag">
+        <div id="abc">
+        <div class="row pt-5" >
+            
+            <div class="col-1 ">
+</div>        <div class="col-2 "id="bsa2"> <div class="ms-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M18.377 3.49c-1.862-.31-3.718.62-4.456 2.095-.428.857-.691 1.624-.728 2.361-.035.71.138 1.444.67 2.252.644.854 1.199 1.913 1.608 3.346a.75.75 0 11-1.442.412c-.353-1.236-.82-2.135-1.372-2.865l-.008-.01c-.53-.698-1.14-1.242-1.807-1.778a50.724 50.724 0 00-.667-.524C9.024 7.884 7.71 6.863 6.471 5.16c-.59.287-1.248.798-1.806 1.454-.665.78-1.097 1.66-1.158 2.446.246.36.685.61 1.246.715.643.12 1.278.015 1.633-.182a.75.75 0 11.728 1.311c-.723.402-1.728.516-2.637.346-.916-.172-1.898-.667-2.398-1.666L2 9.427V9.25c0-1.323.678-2.615 1.523-3.607.7-.824 1.59-1.528 2.477-1.917V2.75a.75.75 0 111.5 0v1.27c1.154 1.67 2.363 2.612 3.568 3.551.207.162.415.323.621.489.001-.063.003-.126.006-.188.052-1.034.414-2.017.884-2.958 1.06-2.118 3.594-3.313 6.044-2.904 1.225.204 2.329.795 3.125 1.748C22.546 4.713 23 5.988 23 7.5c0 1.496-.913 3.255-2.688 3.652.838 1.699 1.438 3.768 1.181 5.697-.269 2.017-1.04 3.615-2.582 4.675C17.409 22.558 15.288 23 12.5 23H4.75a.75.75 0 010-1.5h2.322c-.58-.701-.998-1.578-1.223-2.471-.327-1.3-.297-2.786.265-4.131-.92.091-1.985-.02-3.126-.445a.75.75 0 11.524-1.406c1.964.733 3.428.266 4.045-.19.068-.06.137-.12.208-.18a.745.745 0 01.861-.076.746.746 0 01.32.368.752.752 0 01-.173.819c-.077.076-.16.15-.252.221-1.322 1.234-1.62 3.055-1.218 4.654.438 1.737 1.574 2.833 2.69 2.837H12.5c2.674 0 4.429-.433 5.56-1.212 1.094-.752 1.715-1.904 1.946-3.637.236-1.768-.445-3.845-1.407-5.529a.576.576 0 01-.012-.02 3.557 3.557 0 01-1.553-.94c-.556-.565-.89-1.243-1.012-1.73a.75.75 0 011.456-.364c.057.231.26.67.626 1.043.35.357.822.623 1.443.623 1.172 0 1.953-1.058 1.953-2.234 0-1.205-.357-2.127-.903-2.78-.547-.654-1.318-1.08-2.22-1.23z"></path></svg> </div> 
+<h4><a href="">2 Lakhs +Unique Products</a></h4>
+</div>
+<div class="col-2 "id="bsa2"><div class="ms-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" ><path fill-rule="evenodd" d="M12.672.668a.75.75 0 00-1.345 0L8.27 6.865l-6.838.994a.75.75 0 00-.416 1.279l4.948 4.823-1.168 6.811a.75.75 0 001.088.791L12 18.347l6.117 3.216a.75.75 0 001.088-.79l-1.168-6.812 4.948-4.823a.75.75 0 00-.416-1.28l-6.838-.993L12.672.668z"></path></svg>
+</div>  <h4><a href="">5800 Brands</a></h4>
+</div>
+<div class="col-2 "id="bsa2"><div class="ms-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" backgroundColor="white" ><path d="M8.456 14.494a.75.75 0 011.068.17 3.08 3.08 0 00.572.492A3.381 3.381 0 0012 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 00.572-.492l.021-.026a.75.75 0 011.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 01-.695.566A4.88 4.88 0 0112 17.22a4.88 4.88 0 01-2.736-.814 4.57 4.57 0 01-.695-.566 3.253 3.253 0 01-.236-.261c-.259-.332-.223-.824.123-1.084z"></path><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"></path><path d="M9 10.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM16.25 12a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"></path></svg>
+</div>
+    <h4><a href="">7.5 Million Registered Users</a></h4>
+</div>
+<div class="col-2 "id="bsa2"><div class="ms-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M3.38 8A9.502 9.502 0 0112 2.5a9.502 9.502 0 019.215 7.182.75.75 0 101.456-.364C21.473 4.539 17.15 1 12 1a10.995 10.995 0 00-9.5 5.452V4.75a.75.75 0 00-1.5 0V8.5a1 1 0 001 1h3.75a.75.75 0 000-1.5H3.38zm-.595 6.318a.75.75 0 00-1.455.364C2.527 19.461 6.85 23 12 23c4.052 0 7.592-2.191 9.5-5.451v1.701a.75.75 0 001.5 0V15.5a1 1 0 00-1-1h-3.75a.75.75 0 000 1.5h2.37A9.502 9.502 0 0112 21.5c-4.446 0-8.181-3.055-9.215-7.182z"></path></svg>
+</div> <h4><a href=""> Easy Return &Replacement Policy</a></h4>
+</div>
+<div class="col-2  " id="bsa2"><div class="ms-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill-rule="evenodd" d="M20.322.75a10.75 10.75 0 00-7.373 2.926l-1.304 1.23A23.743 23.743 0 0010.103 6.5H5.066a1.75 1.75 0 00-1.5.85l-2.71 4.514a.75.75 0 00.49 1.12l4.571.963c.039.049.082.096.129.14L8.04 15.96l1.872 1.994c.044.047.091.09.14.129l.963 4.572a.75.75 0 001.12.488l4.514-2.709a1.75 1.75 0 00.85-1.5v-5.038a23.741 23.741 0 001.596-1.542l1.228-1.304a10.75 10.75 0 002.925-7.374V2.499A1.75 1.75 0 0021.498.75h-1.177zM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 00.121-.214v-3.822zm-10.092-2.7L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 00-.214.121l-2.167 3.612 3.223.679zm8.07-7.644a9.25 9.25 0 016.344-2.518h1.177a.25.25 0 01.25.25v1.176a9.25 9.25 0 01-2.517 6.346l-1.228 1.303a22.248 22.248 0 01-3.854 3.257l-3.288 2.192-1.743-1.858a.764.764 0 00-.034-.034l-1.859-1.744 2.193-3.29a22.248 22.248 0 013.255-3.851l1.304-1.23zM17.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-11 13c.9-.9.9-2.6 0-3.5-.9-.9-2.6-.9-3.5 0-1.209 1.209-1.445 3.901-1.49 4.743a.232.232 0 00.247.247c.842-.045 3.534-.281 4.743-1.49z"></path></svg>
+</div>  <h4><a href="">Free Shipping Available above Rs. 699*</a></h4>
+</div>
+<div class="col-1 ">
+</div> 
+</div></div>
+<footer class="container py-5 ">
+    <div class="row">
+       <div class="col-6 col-md">
+       <h5>CATEGORIES</h5>
+    <hr/>
+        <ul class="list-unstyled text-small">
+
+        <li><a class="text-muted" href="#">Clothing & Fashion </a></li>
+          <li><a class="text-muted" href="#">Toys</a></li>
+          <li><a class="text-muted" href="#">Books & CDs</a></li>
+          <li><a class="text-muted" href="#">School Supplies</a></li>
+          <li><a class="text-muted" href="#">Birthday Party Supplies</a></li>
+          <li><a class="text-muted" href="#">Feeding & Nursing</a></li>
+          <li><a class="text-muted" href="#">Bath & Skin Care</a></li>
+          <li><a class="text-muted" href="#">Health & Safety</a></li>
+          <li><a class="text-muted" href="#">Baby Gear</a></li>
+          <li><a class="text-muted" href="#">Nursery</a></li>          
+          <li><a class="text-muted" href="#">Moms & Maternity</a></li>
+          <li><a class="text-muted" href="#">Gifts</a></li>
+          <li><a class="text-muted" href="#">Preschool Admissions</a></li>              
+        </ul>
+        <h5>COMPANY INFO</h5>
+        <hr/>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">About Us</a></li>
+          <li><a class="text-muted" href="#">Contact Us</a></li>
+          <li><a class="text-muted" href="#">Brands</a></li>
+          <li><a class="text-muted" href="#">F.A.Q.s</a></li>
+          <li><a class="text-muted" href="#">FirstCry Stores & Preschool</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5>FIRSTCRY PARENTING</h5>
+        <hr/>
+        <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Getting Pregnant </a></li>
+          <li><a class="text-muted" href="#"> Pregnancy</a></li>
+          <li><a class="text-muted" href="#">Baby</a></li>
+          <li><a class="text-muted" href="#">Toddler</a></li>
+          <li><a class="text-muted" href="#">Preschooler</a></li>
+          <li><a class="text-muted" href="#">  Big Kid</a></li>
+          <li><a class="text-muted" href="#">Vaccination</a></li>
+          <li><a class="text-muted" href="#"> Growth Tracker</a></li>
+          <li><a class="text-muted" href="#"> Baby Names</a></li>
+          <li><a class="text-muted" href="#">FirstCry Parenting YouTube</a></li>
+        </ul>
+        <h5>REGIONAL PARENTING</h5>
+        <hr/>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">FirstCry Hindi Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry Marathi Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry Bangla Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry Arabia Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry UAE Parenting</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-6 col-md">
+        <h5>SHIPPING & POLICIES</h5>        <hr/>
+
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Payments</a></li>
+          <li><a class="text-muted" href="#">Shipping Policy</a></li>
+          <li><a class="text-muted" href="#">Return & Replacement Policy</a></li>
+          <li><a class="text-muted" href="#">Cancellation Policy </a></li>
+          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+          <li><a class="text-muted" href="#">Next day & Same day delivery</a></li>
+         
+        </ul>
+        <h5>PAYMENT METHOD</h5>        <hr/>
+
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Credit Cards</a></li>
+          <li><a class="text-muted" href="#">Net Banking</a></li>
+          <li><a class="text-muted" href="#">ATM & Debit Cards</a></li>
+          <li><a class="text-muted" href="#">COD(Cash on Delivery)</a></li>
+          <li><a class="text-muted" href="#">Easy EMI</a></li>
+
+        </ul>
+        <h5>CONNECT WITH US</h5> <hr/>
+        <ul class="list-unstyled text-small ">
+         
+               <li> <div class="social-media">
+                <ul class="list-inline">
+                    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+           </div>
+        </li>
+                
+            <li><a class="text-muted" href="#">Testimonials</a></li>
+          <li><a class="text-muted" href="#">SITEMAP</a></li>
+          <li><a class="text-muted" href="#">LOYALTY CASH</a></li>
+        </ul>
+      </div> <div class="col-6 col-md">
+        <h5>OUR APPS</h5> <hr/>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">FirstCry India: Shopping & Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry India: Shopping & Parenting iOS</a></li>
+        
+        </ul>
+        <h5>Learning & Education</h5> <hr/>
+        <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Intellitots</a></li>
+            <li><a class="text-muted" href="#">Intellikits</a></li> </ul>
+            <h5>SHOP INTERNATIONAL</h5> <hr/>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">FirstCry UAE: Shopping & Parenting</a></li>
+          <li><a class="text-muted" href="#">FirstCry UAE: Shopping & Parenting iOS</a></li>
+       
+        </ul>
+        <h6>KIDS LEARNING & EDUCATIONAL APPS</h6> <hr/>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">PlayBees: Kids Learning & Education App</a></li>
+          <li><a class="text-muted" href="#">PlayBees: 123 Kids Numbers App</a></li>
+          <li><a class="text-muted" href="#">PlayBees: ABC for Kids</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+  <ul class="nav justify-content-center fixed-bottom bg-white">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Shortlist</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Recently Viewed </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Quick Re-Order</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#" tabindex="-1" >Track Order</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Be in Touch </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Become a Franchisee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#" tabindex="-1" >Preschool Admissions</a>
+      </li>
+  </ul>
+</div>
+</body>
+</html>
+<script src="/static/js/home2.js" type="text/javascript"></script>

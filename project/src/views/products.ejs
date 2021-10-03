@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<!-- <link href="/css/style.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="/static/css/products.css"  />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <div class="sticky">
+            <div class="header">
+            <div class="web">
+                <a href="home.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="search-div">
+                <input
+                  type="text"
+                  placeholder="Search for a Category, Brand or Product"
+                />
+                <img
+                  id="searchpng"
+                  src="https://image.flaticon.com/icons/png/128/49/49116.png"
+                  alt=""
+                />
+            </div>
+            <div id=short-links>
+                <div class="location">
+                    <span>Select location</span>
+                </div>
+                <div class="Preschools">
+                    <span>Stores & Preschools</span>
+                </div>
+                <div class="Support">
+                    <span>Support</span>
+                </div>
+                <div class="Trackorder">
+                    <span>Track Order</span>
+                </div>
+                <div class="parenting">
+                    <span>Firstcry Parenting</span>
+                </div>
+                <div class="my-account">
+                    <select>
+                        <option value="">My Account</option>
+                        <option value="">My History</option>
+                        <option value="">Manage Returns</option>
+                        <option value="">Quick Reorder</option>
+
+                    </select>
+                </div>
+                <div class="shortlist">
+                    <img src="https://www.svgrepo.com/show/14970/heart.svg" class="svg" alt=""> Shortlist
+                </div>
+                <div>
+                    <img src="https://www.svgrepo.com/show/11541/shopping-cart.svg" class="cart" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="category">
+                <div class="all-cat">
+                    <a href="">ALL CATOGORIES</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BOY FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">GIRL FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">FOOTWEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">TOYS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">DIAPERING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">GEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">FEEDING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BATH & SKIN</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">NURSERY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">MOMS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">HEALTHY & SAFETY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BOUTIQUES</a>
+                </div>
+                <div class="all-cat-1 blue">
+                    <a href="">Carter's</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 135px">
+            <div class="container">
+                <a href="home.html">Home</a> > Autumn'21 New Arrivals
+            </div>
+
+            <div class="products-catalogue">
+                <div class="filter-left">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/ab_karo_choose.png" alt="" class="amitab">
+                    <span>CHECK DELIVERY DETAILS</span>
+                    <input type="text" placeholder="Enter a pin" class="pin">
+
+                    <div class="filter-text">
+                        <span>FILTER BY</span>
+                    </div>
+                    <div class="cat-text">
+                        <span>CLOTHES & SHOES</span>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="athleisure"
+                        value="athleisure"
+                        onclick="filter('Athleisure & sportswear')"
+                        />
+                        <label for="athleisure">Athleisure & Sportwear</label>
+                    </div>
+                    
+                    
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="nightWear"
+                        value="nightWear"
+                        onclick="filter('Nightwear')"
+                        />
+                        <label for="nightWear">Night Wear</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="rompers"
+                        value="rompers"
+                        onclick="filter('Onesies & Rompers')"
+                        />
+                        <label for="rompers">Onesies & Rompers</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="suits"
+                        value="suits"
+                        onclick="filter('Sets & Suits')"
+                        />
+                        <label for="suits">Suits</label>
+                    </div>
+                    <div class="cat-text">
+                        <span>BRANDS</span>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="Babyhug"
+                        value="Babyhug"
+                        onclick="brand_filter('Babyhug')"
+                        />
+                        <label for="Babyhug">Babyhug</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="Babyoye"
+                        value="Babyoye"
+                        onclick="brand_filter('Babyoye')"
+                        />
+                        <label for="Babyoye">Babyoye</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="CUCUMBER"
+                        value="CUCUMBER"
+                        onclick="brand_filter('Cucumber')"
+                        />
+                        <label for="CUCUMBER">CUCUMBER</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                        type="checkbox"
+                        id="adidas"
+                        value="adidas"
+                        onclick="brand_filter('Carters')"
+                        />
+                        <label for="adidas">Carter's</label>
+                  </div>
+                </div>
+                <div class="right">
+                    <div class="sort">
+                        <select name="type" id="type" onchange="sort('tshirt')">
+                            <option selected>Sort By</option>
+                            <option value="1">Price : High to Low</option>
+                            <option value="2">Price : Low to High</option>
+                            <option value="3">Best Discount</option>
+                            <option value="4">Popularity</option>
+                        </select>
+                    </div>
+                    <div class="right-text">Autumn'21 New Arrivals</div>
+                    <div id="products-right">
+                        <% products.map((el) => { %> <% let id = el._id %>
+                        <a class="each-product" onclick="changePage('<%= el._id %>')">
+                          <div>
+                            <img src="<%= el.image %>" alt="" />
+                            <div class="brand"><%= el.brandName %></div>
+                            <div class="name"><%= el.productName %></div>
+                            <div class="price">
+                              Rs. <%= Math.ceil(el.price * (100 - el.discount) / 100)%>
+                              <span class="line-through"> Rs. <%= el.price %></span>
+                              <span class="discount">(<%= el.discount %> % OFF)</span>
+                            </div>
+                          </div>
+                        </a>
+                        <% }) %>
+                      </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
+
+<script src="/static/js/products.js"></script>
+<!-- <script src="../script/products.js"></script> -->

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/bag.css"  />
+    <style type="text/css">
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu{ display: none; }
+           
+            .navbar .nav-item:hover .dropdown-menu{ display: block; }
+            .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-default bg-light static-top text-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="..." height="36">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active border-end text-dark" aria-current="page" href="#">Home</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Become a Franchisee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Parenting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">OrderFirstcry </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="# ">Track order </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Contact Us </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">  my account  </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Returns</a></li>
+                    <li><a class="dropdown-item" href="#">Quick Reorder</a></li>
+                    <li><a class="dropdown-item" href="#"> Cash Refund</a></li>
+                    <li><a class="dropdown-item" href="#">Guaranteed Savings</a></li>
+                    <li><a class="dropdown-item" href="#">Intellikit Subscriptions</a></li>
+                    <li><a class="dropdown-item" href="#"> Gift Certificates</a></li>
+                    <li><a class="dropdown-item" href="#"> Invites & Credits</a></li>
+                    <li><a class="dropdown-item" href="#">My Reviews & Uploads</a></li>
+                    <li><a class="dropdown-item" href="#">Notify Me</a></li>
+                    <li><a class="dropdown-item" href="#"> My Shortlist</a></li>             
+                    <li> <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">  Logout</a></li>
+                 
+                </ul>
+            </li>
+        </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   
+
+      <hr/>
+      <div>
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/empty-bag.webp"
+          alt=""
+        />
+        <h3>Hey, it feels so light!</h3>
+        <p>There is nothing in your bag. Let's add some items.</p>
+        <div onclick="redirect()">ADD ITEMS FROM WISHLIST</div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="container3">
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+        />
+        <img
+          class="images"
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+        />
+      </div>
+
+      <a class="contact" href=""><span>Need Help? Contact Us</span></a>
+    </div></body>
+    <script src="/static/js/bag.js"></script>
+    </html>
+    <script>
+        function redirect() {
+          let userObj = JSON.parse(localStorage.getItem("token"));
+          let userId = userObj.id;
+          window.location.href = `/wishlist/${userId}`;
+        }
+      </script>

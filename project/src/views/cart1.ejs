@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/bag.css"  />
+    <style type="text/css">
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu{ display: none; }
+           
+            .navbar .nav-item:hover .dropdown-menu{ display: block; }
+            .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-default bg-light static-top text-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="..." height="36">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active border-end text-dark" aria-current="page" href="#">Home</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Become a Franchisee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Parenting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">OrderFirstcry </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="# ">Track order </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-end text-dark" href="#">Contact Us </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">  my account  </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                    <li><a class="dropdown-item" href="#">Manage Returns</a></li>
+                    <li><a class="dropdown-item" href="#">Quick Reorder</a></li>
+                    <li><a class="dropdown-item" href="#"> Cash Refund</a></li>
+                    <li><a class="dropdown-item" href="#">Guaranteed Savings</a></li>
+                    <li><a class="dropdown-item" href="#">Intellikit Subscriptions</a></li>
+                    <li><a class="dropdown-item" href="#"> Gift Certificates</a></li>
+                    <li><a class="dropdown-item" href="#"> Invites & Credits</a></li>
+                    <li><a class="dropdown-item" href="#">My Reviews & Uploads</a></li>
+                    <li><a class="dropdown-item" href="#">Notify Me</a></li>
+                    <li><a class="dropdown-item" href="#"> My Shortlist</a></li>             
+                    <li> <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">  Logout</a></li>
+                 
+                </ul>
+            </li>
+        </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   
+
+      <hr>
+      <div class="acv">
+
+      <div class = "placeOrder" id= "placeOrder">
+                <div class = "grid-placeOrder">
+                    <p class = "child1">COUPONS</p>
+                    <p class = "child2"><b style = "color: black;">Apply Coupons</b></p>
+                    <button class = "child3">APPLY</button>
+                    <hr class = "child4">
+                    <p class = "child5">PRICE DETAILS (3 Item)</p>
+                    <p class = "child6">Total MRP</p>
+                    <p class = "child7">Rs. 4517.66</p>
+                    <p class = "child8">Discount on MRP</p>
+                    <p class = "child9">- Rs. 1463.6599999999999</p>
+                    <p class = "child10">Coupon Discount</p>
+                    <button class = "child11">Apply Coupon</button>
+                    <p class = "child12">Convenience Fee <b style = "color: #ff3f6c;;">Know More</b></p>
+                    <p class = "child13"><s>Rs99 </s> Free</p>
+                    <hr class = "child14">
+                    <p class = "child15">Total Amount</p>
+                    <p class = "child16">Rs. 3054</p>
+                    <button class = "child17" onclick="showAddress()">PLACE ORDER</button>
+
+                </div>
+            </div>
+
+                
+
+                
+                
+    </div>
+        <div>   
+            <div class = "center" id = "center">
+                <div class = "container4">
+                    <h4>Available Offer</h4>
+                    <p>
+                        . 10% Instant Discount on SBI Credit Cards on a minimum spend of Rs 3000. TCA<br><br>
+                        <span id = "tca">...</span><span id = "more">
+                        . 5% Unlimited Cashback on Flipkart Axis Bank Ctedit Card TCA<br><br>
+                        . 10% Cashback upto Rs 250 on a minimum spend of Rs 1500 with PayZapp TCA<br><br>
+                        . Upto Rs 500 Cashback on Mobikwik wallet transaction of min Rs 999. Use code MBK500 on mobikwik TCA<br><br>
+                        . Flat Rs 200 Cashback on first Airtel Payments Bank transcation on myntra on a min spend of Rs 2000 TCA</span>
+                    </p>
+                    <button onclick="showMore()" id="myBtn">Show More</button>
+                </div>
+                
+
+                <div class = "total">
+                    <h3 style = "float: left; font-size: larger; color: black; font-weight: 700;">My Shopping Bag (3 item)</h3>
+                    <h3 style = "float: right; font-size: larger; color: black; font-weight: 700;">Total: Rs. 3054</h3>
+                </div>
+                <br><br><br>
+                
+                
+                  
+                <div class = "par">
+                    <div id = "addImages">
+                        <div onclick="deleteItem('61544567ad3539c189464228')" id="delete-btn"> X </div>
+                        
+
+                        <img id = "img2" src = "https://cdn.fcglcdn.com/brainbees/images/products/438x531/8356338a.webp"/>
+                        
+                        <div class = "child">
+                            <p class = "p">PUMA<br>
+                           
+                           
+                           <h5>Sold By : Vision Star</h5></p>
+                            <select name="size" id="size">
+                                <option value="SIZE:L">SIZE: L</option>
+                                <option value="SIZE:M">SIZE: M</option>
+                                <option value="SIZE:S">SIZE: S</option>
+                                <option value="SIZE:Xl">SIZE: XL</option>
+                            </select>
+                            <select name="quantity" id="quantity">
+                                <option value="2">2</option>
+                                <option value="10">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                
+                            </select>
+
+                            <div class="mydiv">
+                                <div class="mybold" id = "discount">  Rs. 2694  &nbsp; <s class="mylight">(Rs. 4018.66) </s> &nbsp; <span > 33% OFF</span></div>
+                                
+                              </div>
+
+                            <br>
+
+                            
+                            <h6 class="myDown" style = "color: cornflowerblue;">Delivery By 4th September, 2021</h6>
+                            
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                  
+                <div class = "par">
+                    <div id = "addImages">
+                        <div onclick="deleteItem('61544821aab0572948f3b585')" id="delete-btn"> X </div>
+                        
+
+                        <img id = "img2" src = "https://cdn.fcglcdn.com/brainbees/images/products/438x531/8898895a.webp"/>
+                        
+                        <div class = "child">
+                            <p class = "p">Mini Tarus<br>
+                           
+                           
+                           <h5>Sold By : Vision Star</h5></p>
+                            <select name="size" id="size">
+                                <option value="SIZE:L">SIZE: L</option>
+                                <option value="SIZE:M">SIZE: M</option>
+                                <option value="SIZE:S">SIZE: S</option>
+                                <option value="SIZE:Xl">SIZE: XL</option>
+                            </select>
+                            <select name="quantity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="10">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                
+                            </select>
+
+                            <div class="mydiv">
+                                <div class="mybold" id = "discount">  Rs. 360  &nbsp; <s class="mylight">(Rs. 499) </s> &nbsp; <span > 28% OFF</span></div>
+                                
+                              </div>
+
+                            <br>
+
+                            
+                            <h6 class="myDown" style = "color: cornflowerblue;">Delivery By 4th September, 2021</h6>
+                            
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+
+
+               
+        </div>             
+        
+    </div>
+    <div class = "footer">
+        <div class = "container3">
+            <img  class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"/>
+            <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/>
+
+        </div>
+      
+            <a class = "contact" href= ""><span>Need Help? Contact Us</span></a>
+        
+
+    </div>
+    
+</body>
+</html>
+
+<script src="/static/js/bag.js"></script>
+<script>
+  function showAddress(){
+    alert("order placed succesfully")
+    window.location.href="/home"
+  }
+
+
+</script>
+
+                    
+
+

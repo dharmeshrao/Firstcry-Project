@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/css/products2.css"  />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <div class="sticky">
+            <div class="header">
+            <div class="web">
+                <a href="home.html">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="search-div">
+                <input
+                  type="res"
+                  placeholder="Search for a Category, Brand or Product"
+                />
+                <img
+                  id="searchpng"
+                  src="https://image.flaticon.com/icons/png/128/49/49116.png"
+                  alt=""
+                />
+            </div>
+            <div id=short-links>
+                <div class="location">
+                    <span>Select location</span>
+                </div>
+                <div class="Preschools">
+                    <span>Stores & Preschools</span>
+                </div>
+                <div class="Support">
+                    <span>Support</span>
+                </div>
+                <div class="Trackorder">
+                    <span>Track Order</span>
+                </div>
+                <div class="parenting">
+                    <span>Firstcry Parenting</span>
+                </div>
+                <div class="my-account">
+                    <select>
+                        <option value="">My Account</option>
+                        <option value="">My History</option>
+                        <option value="">Manage Returns</option>
+                        <option value="">Quick Reorder</option>
+
+                    </select>
+                </div>
+                <div class="shortlist">
+                    <img src="https://www.svgrepo.com/show/14970/heart.svg" class="svg" alt=""> Shortlist
+                </div>
+                <div onclick="cart()">
+                    <img src="https://www.svgrepo.com/show/11541/shopping-cart.svg" class="cart"  alt="">cart
+                </div>
+            </div>
+            </div>
+            <div class="category">
+                <div class="all-cat">
+                    <a href="">ALL CATOGORIES</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BOY FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">GIRL FASHION</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">FOOTWEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">TOYS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">DIAPERING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">GEAR</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">FEEDING</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BATH & SKIN</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">NURSERY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">MOMS</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">HEALTHY & SAFETY</a>
+                </div>
+                <div class="all-cat-1">
+                    <a href="">BOUTIQUES</a>
+                </div>
+                <div class="all-cat-1 blue">
+                    <a href="">Carter's</a>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="content">
+            <div class="left-content">
+                <div class="img-content">
+                    <img src= "<%=el.image %>">
+                </div>
+                <button onclick="addtoCart(`<%=el._id %>`)">ADD TO CART</button>
+                <button>SHORTLIST</button>
+            </div>
+            <div class="right-content">
+                <div class="right-container">
+                    <div class="mid-size"><%= el.brandName %></div>
+                    <div class="low-size">6 to 9 Months</div>
+                    <div class="low-size">Product ID: 3609518</div>
+                    <hr>
+                    <div class="mid-size price">
+                        <span class="cost">Rs.<%= Math.ceil(el.price * (100 - el.discount) / 100)%></span>
+                    </div>
+                    <div class="rs-res low-size">
+                        <span>MRP inc. all taxes, Add'I charges may apply on discounted price</span>
+                    </div>
+                    <div class="space">
+                        <span class="ash">COLOR</span>
+                    </div>
+                    <div class="space">
+                        <span class="ash">SIZE</span><span class="ash box">6 TO 9 MONTHS</span><span class="ash box1">9 TO 12 MONTHS</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <img id="tag" src="data:image/png;base64,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" alt="">
+                        <span class="ash">BEST OFFERS</span>
+                    </div>
+                    <div class="rs-res low-size">
+                        <span>Club Offer - Flat 35% Off* | Flat 30% Off for All Users Code: AUTM | Limited period offer |</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <span class="ash">FIRSTCRY CLUB BENEFITS</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <img id="van" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzyqDQ8MGvUA2vcgRENTdAd68IUTv0jZ4Xw&usqp=CAU" alt="">
+                        <span class="ash">CHECK DELIVERY DETAILS</span>
+                    </div>
+                    <div>
+                        <input type="res" name="" id="pin" placeholder="Enter Pincode">
+                    </div>
+                    <div class="low-size">Same Day/Next Day delivery applicable on this product. Enter pincode to check availability in your area.</div>
+                    <hr>
+                    <div>
+                        <span class="ash">PRODUCT DESCRIPTION</span>
+                    </div>
+                    <div class="low-size no-space">
+                        <div class="bold">Specifications</div>
+                        <div>Brand-<%= el.brandName %></div>
+                        <div>Type-<%= el.category %></div>
+                        <div>Fabric-100% Polyster</div>
+                        <div>Sleeves-Full</div>
+                        <div>Neck-Hooded</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
+
+<!-- <script src="../script/products-details.js">
+   
+
+
+</script> -->
+
+<script>
+    async function cart() {
+//         const response = await fetch("/cart/userid/d");
+//    const userd = await response.json();
+//    console.log(userd.userid)
+//    const userId =userd.userid;
+//    const result = await fetch(`/cart/d/${userId}`).then((res) => res.json())
+
+//   window.location.href = `/cart/${result}/`
+//   //.then(res => res.text())          // convert to plain res
+//   .then(res => console.log(res));
+        window.location.href = `/cart`;
+    }
+
+    async function addtoCart(prodId) {
+  //console.log(prodId);
+   const response = await fetch("/cart/userid/d",{
+    method: "get",
+      headers: {
+        "Content-Type": "application/json",
+      },
+   });
+   const userd = await response.json();
+   console.log(userd.userid)
+   const userId =userd.userid;
+    const result = await fetch("/cart/addtoCart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+       userId,
+        prodId,
+      }),
+    }).then((res) => res.json());
+    alert("Item Successfully Added to Cart");
+  }    
+    
+</script>
