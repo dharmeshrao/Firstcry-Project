@@ -1,1 +1,6 @@
 # Firstcry-Project
+Hello there, hope you are doing well. I would like to introduce me first. My name is Dharmesh. I am from non CS background . But currently learning Web Development in Masai School. At the end of every unit Construct week happens and this was our second construct week. We got a project where we have to clone Firstcry.com website and add backend into it with the time bound of seven days. In our project me myself Dharmesh and along with my teammates Mukunda , Mayank and Sagar built this project. We used Javascript, html, css for Frontend and Mongoose and Express to connect our website to backend.
+
+What is Firstcry? FirstCry is an Indian e-commerce company, headquartered in Pune. The company, launched in 2010, initially focused on baby products retailing. In January 2020, the company had over 380 stores across India. FirstCry opened its first outlet in Srinagar in May 2019. It is into its series E round of financing.
+
+So coming to a blog, there is a lots of challenge we got. The below snapshot is landing page that is created by us which is almost similar to the landing page of Firstcry website. We used HTML and CSS and BOOTSTRAP for styling the website and some hover effects to the buttons in the page and adding some sliding features into it. We are storing all user data inside Mongoose atlas and making our website dynamic using EJS.
